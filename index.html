@@ -3,9 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kingro Goat Milk - Coming Soon</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Poppins', serif;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+      }
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        animation: fadeInDown 1.5s ease-in-out;
+      }
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+      .divider {
+        width: 80%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 2rem auto;
+        animation: fadeIn 2s ease-in-out;
+      }
+      footer {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        animation: fadeIn 3s ease-in-out;
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Kangro Products</h1>
+    <div>
+      <h1>Kingro</h1>
+      <p>
+        Freshness and health are coming your way! Stay tuned for premium goat
+        milk products.
+      </p>
+      <div class="divider"></div>
+      <footer>
+        Kingrass Pvt Ltd &copy; 2025
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
